@@ -1,0 +1,20 @@
+<phones>
+        <phone id="11" xyz="abc">
+            <first_name>Samsung</first_name>
+            <price>35000</price>
+            <stock>50</stock>
+            <status>1</status>  
+        </phone>
+        <phone id="20" xyz="abc">
+            <first_name>HTC</first_name>
+            <price>65300</price>
+            <stock>35</stock>
+            <status>0</status>
+        </phone>
+        <phone id="23" xyz="abc">
+            <first_name>Nokia</first_name>
+            <price>25100</price>
+            <stock>100</stock>
+            <status>1</status>
+        </phone>
+    </phones>
