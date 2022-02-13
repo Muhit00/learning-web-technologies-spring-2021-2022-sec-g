@@ -1,11 +1,12 @@
 <?php
     $uerror = "";
-    $username = "";
+    $Gmail = "";
     if(isset($_REQUEST["submit"])){
         if($_REQUEST["gmail"]==null){
             $uerror = "Invalid Gmail!!!";
         }else{
             $Gmail = $_REQUEST["gmail"];
+            echo "$Gmail";
         }
     }
 ?>
@@ -13,14 +14,14 @@
     <head></head>
     <body>
         <fieldset>
-            <legend>Name</legend>
+            <legend>Gmail</legend>
             <form method="get" action="">
                 <label for="gmail">Gmail</label><br>
-                <input type="gmail" name="gmail" value="<?=$Gmail?>">
+                <input type="email" name="gmail" value="<?=$Gmail?>">
                 
                 <hr>
                 <input type="submit" value="Submit" name="submit">
-                <?uerror?>
+                <?$uerror?>
             </form>
         </fieldset>        
     </body>

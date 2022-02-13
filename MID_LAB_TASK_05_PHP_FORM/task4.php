@@ -1,11 +1,12 @@
 <?php
     $uerror = "";
-    $username = "";
+    $Gender = "";
     if(isset($_REQUEST["submit"])){
-        if($_REQUEST["gender"]==null){
+        if($_REQUEST["radio"]==null){
             $uerror = "Invalid Gender!!!";
         }else{
-            $Gender = $_REQUEST["gender"];
+            $Gender = $_REQUEST["radio"];
+            echo "$Gender";
         }
     }
 ?>
@@ -13,7 +14,7 @@
     <head></head>
     <body>
         <fieldset>
-            <legend>Name</legend>
+            <legend>Gender</legend>
             <form method="get" action="">
                 <label for="radio">date</label><br>
                 <input type="radio" name="radio" value="<?=$Gender?>">Male
@@ -22,7 +23,7 @@
                 
                 <hr>
                 <input type="submit" value="Submit" name="submit">
-                <?uerror?>
+                <?$uerror?>
             </form>
         </fieldset>        
     </body>
