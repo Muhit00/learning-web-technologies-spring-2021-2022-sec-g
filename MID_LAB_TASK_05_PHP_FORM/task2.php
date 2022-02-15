@@ -6,7 +6,6 @@
             $uerror = "Invalid Gmail!!!";
         }else{
             $Gmail = $_REQUEST["gmail"];
-            echo "$Gmail";
         }
     }
 ?>
@@ -17,11 +16,11 @@
             <legend>Gmail</legend>
             <form method="get" action="">
                 <label for="gmail">Gmail</label><br>
-                <input type="email" name="gmail" value="<?=$Gmail?>">
-                
+                <input type="email" name="gmail" value="<?=$Gmail?>"><br>
+                <?=$uerror?>
                 <hr>
                 <input type="submit" value="Submit" name="submit">
-                <?$uerror?>
+                
             </form>
         </fieldset>        
     </body>

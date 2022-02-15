@@ -6,7 +6,6 @@
             $uerror = "Invalid Date!!!";
         }else{
             $Date = $_REQUEST["date"];
-            echo "$Date";
         }
     }
 ?>
@@ -17,11 +16,11 @@
             <legend>Date of Birth</legend>
             <form method="get" action="task3.php">
                 <label for="date">date</label><br>
-                <input type="date" name="date" value="<?=$Date?>">
-                
+                <input type="date" name="date" value="<?=$Date?>"><br><br>
+                <?=$uerror?>
                 <hr>
                 <input type="submit" value="Submit" name="submit">
-                <?$uerror?>
+                
             </form>
         </fieldset>        
     </body>
